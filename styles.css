@@ -17,7 +17,7 @@ body {
   width: 400px;
   height: 450px; /* Increased height */
   max-width: 90%;
-  box-shadow: 10px 10px 9px 9px rgba(0, 0, 0, 1);
+  box-shadow: 10px 10px 9px 9px rgba(0, 0, 0, 2);
   flex: 0, 1, 150;
 }
 
