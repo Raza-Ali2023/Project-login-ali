@@ -18,7 +18,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: rgba(32, 89, 63, 0.4);
   width: 400px;
   height: 350px;
