@@ -1,11 +1,6 @@
-* {
-  padding: 0px;
-  margin: 0px;
-}
-
 body {
-  background: url(pixels.jpg) center/cover no-repeat;
-  background-color: rgba(32, 90, 65, 0.5);
+  background-image: url('https://wallpaperaccess.com/full/2957951.jpg');
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,27 +13,32 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 5px;
-  background-color: rgba(32, 89, 63, 0.4);
+  border-radius: 20px;
   width: 400px;
-  height: 350px;
+  height: 450px; /* Increased height */
   max-width: 90%;
-  box-shadow: 2px 9px 9px rgba(0, 0, 0, 0.4);
+  box-shadow: 10px 10px 9px 9px rgba(0, 0, 0, 1);
   flex: 0, 1, 150;
 }
 
 .login-container input[type="text"],
 .login-container input[type="password"] {
   width: 150px;
-  height: 33px;
-  border: 1px solid #fcfcfc;
+  height: 27px;
+  margin-top: 30px;
+  border: 1px solid #d9d9d9;
   border-radius: 3px;
+  background-color: #f2f2f2;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.login-container input[type="password"] {
+  margin-top: 3px;
 }
 
 h2 {
-  color: #000000;
-  height: 20px;
-  margin-bottom: 39px;
+  color: #ffffff;
+  margin-bottom: 20px;
 }
 
 button {
@@ -46,13 +46,14 @@ button {
   height: 35px;
   border: none;
   border-radius: 3px;
-  background-color: #3a705a;
-  color: #000f03;
+  background-color: #35402e;
+  color: #ffffff;
   cursor: pointer;
   transition: 0.2s;
 }
 
 button:hover {
+  background-color: #496143;
   box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.3);
 }
 
@@ -63,21 +64,14 @@ button:active {
 }
 
 .user-login,
-.username {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 10px;
-}
-
+.username,
 .password,
 .login {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 10px 0;
+  margin-bottom: 10px;
 }
 
 /* Additional styles for small screens */
@@ -91,4 +85,21 @@ button:active {
   .login-container input[type="password"] {
     width: 100%;
   }
+}
+
+.forgot-remember {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.forgot-password,
+.remember-me {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.remember-me input[type="checkbox"] {
+  margin-right: 5px;
 }
