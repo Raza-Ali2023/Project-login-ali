@@ -1,4 +1,5 @@
 body {
+  position: relative;
   background-image: url('https://wallpaperaccess.com/full/2957951.jpg');
   background-size: cover;
   display: flex;
@@ -8,39 +9,52 @@ body {
   font-family: Arial, sans-serif;
 }
 
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://wallpaperaccess.com/full/2957951.jpg');
+  background-size: cover;
+  z-index: -1;
+}
+
 .login-container {
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-evenly;
+  align-items: center; 
   border-radius: 20px;
   width: 400px;
-  height: 450px; /* Increased height */
+  height: 450px;
   max-width: 90%;
-  box-shadow: 10px 10px 9px 9px rgba(0, 0, 0, 2);
-  flex: 0, 1, 150;
+  box-shadow: 10px 10px 9px 9px rgba(0, 0, 0, 0.8);
+  background-color: rgba(255, 255, 255, 0.116);
+  backdrop-filter: blur(8px);
 }
 
+
+/* Styles for text input fields in the login container */
 .login-container input[type="text"],
 .login-container input[type="password"] {
-  width: 150px;
-  height: 27px;
-  margin-top: 30px;
-  border: 1px solid #d9d9d9;
+  width: 160px;
+  height: 30px;
+  border: 1px solid #27632c;
   border-radius: 3px;
-  background-color: #f2f2f2;
+  background-color: #d6d3d3;
   padding: 5px;
-  margin-bottom: 10px;
-}
-.login-container input[type="password"] {
-  margin-top: 3px;
 }
 
+/* Styles for the heading */
 h2 {
   color: #ffffff;
   margin-bottom: 20px;
 }
 
+/* Styles for the login button */
 button {
   width: 90px;
   height: 35px;
@@ -52,17 +66,20 @@ button {
   transition: 0.2s;
 }
 
+/* Styles for the login button on hover */
 button:hover {
   background-color: #496143;
   box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.3);
 }
 
+/* Styles for the login button on click */
 button:active {
   box-shadow: none;
   width: 87px;
   height: 34px;
 }
 
+/* Styles for the login form sections */
 .user-login,
 .username,
 .password,
@@ -87,6 +104,7 @@ button:active {
   }
 }
 
+/* Styles for the forgot password and remember me section */
 .forgot-remember {
   display: flex;
   align-items: center;
@@ -94,12 +112,16 @@ button:active {
   margin-bottom: 10px;
 }
 
+/* Styles for the forgot password link */
 .forgot-password,
 .remember-me {
   color: #ffffff;
   text-decoration: none;
 }
 
+/* Styles for the remember me checkbox */
 .remember-me input[type="checkbox"] {
-  margin-right: 5px;
+  margin-left: 15px;
 }
+
+
