@@ -31,9 +31,9 @@ body::before {
   width: 400px;
   height: 450px;
   max-width: 90%;
-  box-shadow: 10px 10px 9px 9px rgba(0, 0, 0, 0.8);
+  box-shadow: 10px 10px 9px 9px rgba(0, 0, 0, 0.4);
   background-color: rgba(255, 255, 255, 0.116);
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(1px);
 }
 
 
@@ -63,7 +63,7 @@ button {
   background-color: #35402e;
   color: #ffffff;
   cursor: pointer;
-  transition: 0.2s;
+  transition: 0.15s;
 }
 
 /* Styles for the login button on hover */
